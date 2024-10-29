@@ -45,7 +45,7 @@ behaviours {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp N4>, <&kp DLLR>;
+            bindings = <&kp N4>, <&kp DOLLAR>;
         };
 
     td4: tap_dance_4 {
@@ -165,7 +165,7 @@ layer_upper {
 
     &td0             &td1        &td2      &td3          &td4                                  &td5             &td6              &td7             &td8            &td9   
     &kp TAB          &kp         &kp       &kp PSCRN     &kp CAPS                              &kp MINUS        &kp EQUAL         &kp LBKT         &kp RBKT        &td10  
-    &kp              &kp         &kp       &kp           &kp                                   &kp UNDER        &kp PLUS          &kp LBRC         &kp RBRC        &kp PIPE2
+    &kp              &kp         &kp       &kp           &kp                                   &kp UNDER        &kp PLUS          &kp LBRC         &kp RBRC        &kp PIPE
                                  &kp LGUI  &mo 1         &kp SPACE                             &kp RET          &mo 2             &kp RALT
     >;
     };
