@@ -1,6 +1,5 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/ext_power.h>
 #include <behaviors.dtsi>
 
 #define BASE 0
@@ -143,7 +142,7 @@ lower_layer {
 
     &soft_off          &none            &none             &none            &none                &none      &none     &none         &none        &none   
     &bt BT_CLR         &bt BT_SEL 1     &bt BT_SEL 2      &bt BT_SEL 3     &none                &kp HOME   &kp LEFT  &kp DOWN      &kp RIGHT    &none   
-    &ext_power EP_TOG  &none            &none             &none            &none                &none      &none     &none         &kp END      &none   
+    &none              &none            &none             &none            &none                &none      &none     &none         &kp END      &none   
                                         &kp LGUI          &mo 1            &kp RET              &kp RET    &mo 2     &kp RALT
     >;
 };
