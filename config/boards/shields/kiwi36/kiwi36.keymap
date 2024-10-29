@@ -99,8 +99,7 @@ behaviours {
 
     };
 
-
-    keymap {
+keymap {
 
     compatible = "zmk,keymap";
 
