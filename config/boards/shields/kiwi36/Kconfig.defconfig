@@ -14,6 +14,9 @@ if SHIELD_KIWI36_LEFT || SHIELD_KIWI36_RIGHT
 config ZMK_SPLIT
     default y
 
+config ZMK_SPLIT
+    default y
+
 if ZMK_DISPLAY
 
 config ZMK_DISPLAY
