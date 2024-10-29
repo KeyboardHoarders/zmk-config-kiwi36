@@ -68,5 +68,4 @@ default_kscan: kscan {
     com-sequential;
     prechargep = <0x22>;
   };
- };
 };
