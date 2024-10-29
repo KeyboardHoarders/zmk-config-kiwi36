@@ -127,28 +127,8 @@ default_layer {
     >;
 };
 
+
 lower_layer {
-
-// ---------------------------------   ---------------------------------------------
-// | soft  |     |     | ext | ext |   |        |         |  UP    |         |     |
-// ---------------------------------   ---------------------------------------------
-// |  CLR  | bt1 | bt2 | bt3 |     |   |  HOME  |  LEFT   |  DOWN  |  RIGHT  |     |
-// ---------------------------------   ---------------------------------------------
-// |       |     |     |     |     |   |        |         |        |   END   |     |
-// ---------------------------------   ---------------------------------------------
-//               | GUI | LWR | SPC |   | ENT | RSE  | ALT |
-//               -------------------   --------------------
-
-    bindings = <
-
-    &soft_off    &none            &none            &ext_power EP_ON  &ext_power EP_OFF                &none      &none     &none         &none        &none   
-    &bt BT_CLR   &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3      &none                            &kp HOME   &kp LEFT  &kp DOWN      &kp RIGHT    &none   
-    &none        &none            &none            &none             &none                            &none      &none     &none         &kp END      &none   
-                                  &kp LGUI         &mo 1             &kp RET                          &kp RET    &mo 2     &kp RALT
-    >;
-};
-
-raise_layer {
  
 // ---------------------------------------   --------------------------------
 // |  1 !  |    2 @    | 3 # | 4 $ | 5 % |   | 6 ^ |  7 & | 8 * | 9   |  0  |
@@ -165,8 +145,30 @@ raise_layer {
     &td1             &td2        &td3      &td4          &td5                                  &td6             &td7              &td8             &td9            &td10   
     &kp TAB          &none       &none     &kp PSCRN     &kp CAPS                              &kp MINUS        &kp EQUAL         &kp LBKT         &kp RBKT        &td11  
     &none            &none       &none     &none         &none                                 &kp UNDER        &kp PLUS          &kp LBRC         &kp RBRC        &kp PIPE
-                                 &kp LGUI  &mo 1         &kp SPACE                             &kp RET          &mo 2             &kp RALT
+                                 &kp LGUI  &mo 1         &kp RET                               &kp RET          &mo 2             &kp RALT
     >;
     };
+
+raise_layer {
+
+// ---------------------------------   ---------------------------------------------
+// | soft  |     |     | ext | ext |   |        |         |  UP    |         |     |
+// ---------------------------------   ---------------------------------------------
+// |  CLR  | bt1 | bt2 | bt3 |     |   |  HOME  |  LEFT   |  DOWN  |  RIGHT  |     |
+// ---------------------------------   ---------------------------------------------
+// |       |     |     |     |     |   |        |         |        |   END   |     |
+// ---------------------------------   ---------------------------------------------
+//               | GUI | LWR | SPC |   | ENT | RSE  | ALT | 
+//               -------------------   --------------------
+
+    bindings = <
+
+    &soft_off    &none            &none            &ext_power EP_ON  &ext_power EP_OFF                &none      &none     &none         &none        &none   
+    &bt BT_CLR   &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3      &none                            &kp HOME   &kp LEFT  &kp DOWN      &kp RIGHT    &none   
+    &none        &none            &none            &none             &none                            &none      &none     &none         &kp END      &none   
+                                  &kp LGUI         &mo 1             &kp RET                          &kp RET    &mo 2     &kp RALT
+    >;
+};
+
 };
 };
