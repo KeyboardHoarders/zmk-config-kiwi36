@@ -161,8 +161,8 @@ layer_upper {
     bindings = <
 
     &td0             &td1        &td2      &td3          &td4                                  &td5             &td6              &td7             &td8            &td9   
-    &kp TAB          &kp LG(E)   &kp       &kp PSCRN     &kp CAPS                              &kp MINUS        &kp EQUAL         &kp LBKT         &kp RBKT        &td10  
-    &kp              &kp         &kp       &kp LG(V)     &kp LC(LA(DEL))                       &kp UNDER        &kp PLUS          &kp LBRC         &kp RBRC        &kp PIPE2
+    &kp TAB          &kp         &kp       &kp PSCRN     &kp CAPS                              &kp MINUS        &kp EQUAL         &kp LBKT         &kp RBKT        &td10  
+    &kp              &kp         &kp       &kp           &kp                                   &kp UNDER        &kp PLUS          &kp LBRC         &kp RBRC        &kp PIPE2
                                  &kp LGUI  &mo 1         &kp SPACE                             &kp RET          &mo 2             &kp RALT
     >;
     };
