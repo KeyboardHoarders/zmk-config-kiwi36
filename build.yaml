@@ -19,7 +19,8 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: kiwi36_left
+    shield: kiwi36_left nice_view_adapter nice_view
   - board: nice_nano_v2
-    shield: kiwi36_right
- 
+    shield: kiwi36_right nice_view_adapter nice_view
+  - board: nice_nano_v2
+    shield: settings_reset
